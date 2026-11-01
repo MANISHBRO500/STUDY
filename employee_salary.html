@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Salary Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+
+    <div class="content program-page">
+        <div class="program-card">
+            <h1>Employee Salary Calculator</h1>
+            <div class="program-shell">
+                <div class="shell-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="title-text">Python IDLE</span>
+                </div>
+
+                <form id="salary-form" class="program-form">
+                    <label>Enter employee name:
+                        <input type="text" id="employeeName" required>
+                    </label>
+                    <label>Enter basic salary:
+                        <input type="number" id="basicSalary" step="0.01" min="0" required>
+                    </label>
+                    <label>Enter HRA:
+                        <input type="number" id="hra" step="0.01" min="0" required>
+                    </label>
+                    <label>Enter DA:
+                        <input type="number" id="da" step="0.01" min="0" required>
+                    </label>
+                    <label>Enter tax percentage:
+                        <input type="number" id="taxPercent" step="0.01" min="0" max="100" required>
+                    </label>
+                    <button type="submit" class="animated-button">Calculate Salary</button>
+                </form>
+
+                <div id="salaryOutput" class="output-box" aria-live="polite">
+                    >>> Employee Salary Details
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="vertical-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="employee_salary.html">Salary</a></li>
+        </ul>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
